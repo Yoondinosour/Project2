@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/* 공통 */
+#wrap #main .cont_tumb span{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* main_contents */
+.main_contents .paging{
+    bottom: 108px;
+}
+.main_contents .paging li:nth-child(1) .link_page{
+    background: #ffffff;
+}
+.main_contents .slick-next,
+.main_contents .slick-prev{
+    display: none;
+}
+/* sub_contents */
+.sub_contents ul li{
+    width: 50%;
+}
+.sub_contents li .cont_tumb{
+    max-width: 50%;
+}
+.sub_contents li .cont_tumb p{
+    width: 100%;
+}
+
+/* imo_contents */
+.imo_content li{
+    width: 50%;
+}
+.imo_content li .cont_tumb{
+    max-width: 50%;
+}
+
+/* mobile_contents */
+.mobile_content li{
+    width: 50%;
+}
+.mobile_content li .cont_tumb{
+    max-width: 50%;
+}
+.mobile_content li .cont_tumb p{
+    max-width: 230px;
+}

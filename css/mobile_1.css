@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+/* 공통 */
+#wrap #main .cont_tumb p{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* main_contents */
+.main_contents .paging{
+    bottom: 90px;
+}
+.main_contents .paging .link_page{
+    width: 7px;
+    height: 7px;
+}
+.main_contents .paging li:nth-child(1) .link_page{
+    background: #ffffff;
+}
+.main_contents .slick-next,
+.main_contents .slick-prev{
+    display: none;
+}
+
+/* sub_contents */
+.sub_contents ul li>a{
+    width: 100%;
+    max-width: 770px;
+}
+.sub_contents ul li{
+    width: 100%;
+}
+.sub_contents ul .tumbnail{
+    width: 60%;
+    max-width: 156px;
+}
+.sub_contents ul li .cont_tumb{
+    width: 35%;
+    max-width: 500px;
+}
+.sub_content li .cont_tumb span{
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.sub_contents ul li p{
+    width: 100%;
+}
+/* imo_contents */
+.imo_content ul li>a{
+    width: 100%;
+    max-width: 770px;
+}
+.imo_content li{
+    width: 100%;
+}
+.imo_content ul .tumbnail{
+    width: 60%;
+    max-width: 156px;
+}
+.imo_content ul li .cont_tumb{
+    width: 35%;
+    max-width: 500px;
+    line-height: 125%;
+}
+.imo_content ul li .cont_tumb .info_game{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+/* mobile_contents */
+.mobile_content ul li>a{
+    width: 100%;
+    max-width: 770px;
+}
+.mobile_content li{
+    width: 100%;
+}
+.mobile_content ul li .cont_tumb{
+    width: 50%;
+    max-width: 500px;
+    line-height: 125%;
+    top: 5%;
+}
+.mobile_content li .cont_tumb strong span{
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+
+/* banner */
+.banner_1 a,
+.banner_2 a{
+    height: 78px;
+}
+.banner_img1,
+.banner_img2{
+    width: 290px;
+    height: 78px;
+}

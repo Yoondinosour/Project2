@@ -1,0 +1,20 @@
+/* main_contents */
+.main_contents .paging{
+    bottom: 70px;
+}
+/* sub_contents */
+.sub_contents ul li{
+    width: 100%;
+}
+.sub_contents ul li div{
+
+}
+
+/* imo_contents */
+.imo_content li{
+    width: 50%;
+    position: relative;
+}
+.imo_content li .cont_tumb{
+    width: 160px;
+}

@@ -1,0 +1,521 @@
+@charset "UTF-8";
+
+/* 초기화 코드 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Malgun Gothic','맑은 고딕',sans-serif;
+}
+
+/* 공통적용 */
+body{
+    min-height: 450px;
+    line-height: 1.5;
+    background: #f2f2f2;
+    overflow-y: scroll;
+}
+#wrap{
+    overflow: hidden;
+    padding: 0 13px;
+}
+h2{
+    text-indent: -999999px;
+    overflow: hidden;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    color: #666666;
+    text-decoration: none;
+}
+.cf::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.inner{
+    max-width: 800px;
+    margin: 0 auto;
+}
+button{
+    border: none;
+}
+
+
+/* header */
+#header{
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 10;
+    border-bottom: 1px solid #e5e5e5;
+}
+#heade>.inner{
+    position: relative;
+}
+#header .menu{
+    position: relative;
+    top: 15px;
+}
+#header .menu_icon{
+    text-indent: -999999px;
+    display: block;
+    background: url(../images/ico_comm_200324.png) 0 0 no-repeat;
+    width: 17px;
+    height: 13px;
+    background-position: -440px 0px;
+}
+#header .title{
+    max-width: 160px;
+    height: 45px;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#header .title img{
+    height: 19px;
+}
+#header .search{
+    position: relative;
+    top: 15px;
+}
+#header .search_icon{
+    text-indent: -999999px;
+    display: block;
+    background: url(../images/ico_comm_200324.png) 0 0 no-repeat;
+    width: 17px;
+    height: 17px;
+    background-position: -400px 0px;
+}
+
+/* main_contents */
+#main{
+    width: 100%;
+    padding-top: 45px;
+}
+#main h2{
+    text-indent: -9999999px;
+    height: 0;
+    width: 0;
+}
+.main_contents .main_title{
+    font-size: 18px;
+    padding: 20px 0px 10px;
+}
+.main_contents .main_content{
+    position: relative;
+    width: 100%;
+}
+.main_contents .content{
+    width: 100%;
+    display: block;
+    position: relative;
+}
+.main_contents .content img{
+    width: 100%;
+    border-radius: 20px;
+}
+.main_contents .main_content a span{
+    display: block;
+    text-indent: -99999px;
+}
+.main_contents .slick-dots{
+    position: absolute;
+    bottom: 3%;
+}
+.main_contents .slick-dots li{
+    margin: 0;
+    width: 15px;
+    height: 15px;
+}
+.main_contents .slick-dots li.slick-active button:before{
+    color: #ff6c6c;
+    opacity: .8;
+}
+.main_contents .slick-dots li button::before {
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .3;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* sub_contents */
+.sub_contents .sub_title{
+    padding: 20px 0px 10px;
+}
+.sub_contents .sub_content{
+    position: relative;
+    border-radius: 10px;
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,.1);
+}
+.sub_content ul{
+    padding: 9px 10px;
+}
+.sub_content li{
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+}
+.sub_content>ul>li>a{
+    display: block;
+    max-width: 368px;
+    height: 114px;
+    margin: 10px;
+    background: #fff;
+}
+.sub_content li .tumbnail{
+    width: 156px;
+    height: 114px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.sub_content li .tumbnail .update{
+    text-indent: -99999px;
+    background: url(../images/ico_comm_200324.png) no-repeat;
+    background-position: 0px -60px;
+    width: 68px;
+    position: absolute;
+    border-radius: 10px 0px 5px 0px;
+}
+.sub_content li .cont_tumb{
+    width: 50%;
+}
+.sub_content li .cont_tumb span{
+    white-space: nowrap;
+}
+.sub_content li .tumbnail img{
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+}
+.sub_content li .cont_tumb strong{
+    font-size: 16px;
+    color: #1a1a1a;
+}
+.sub_content li .cont_tumb p{
+    font-size: 14px;
+    width: 100%
+}
+.sub_content li .link{
+    position: absolute;
+    text-align: center;
+    width: 76px;
+    height: 40px;
+    line-height: 38px;
+    border-radius: 4px;
+    bottom: 10px;
+    left: 175px;
+    background: #ffdc00;
+    border: 1px solid transparent;
+}
+.sub_content li .link a{
+    display: block;
+    width: 100%;
+    color: #1a1a1a;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sub_content .all_pregame{
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 51px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    border-top: 1px solid #f2f2f2;
+}
+
+/* imoticon */
+.imoticon .imo_title{
+    padding: 20px 0px 10px;
+}
+.imoticon .imo_content{
+    position: relative;
+    background: #ffffff;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,.1);
+}
+.imo_content ul{
+    padding: 9px 10px;
+}
+.imo_content li{
+    position: relative;
+    width: 50%;
+}
+.imo_content>ul>li>a{
+    display: block;
+    max-width: 368px;
+    height: 114px;
+    margin: 10px;
+    background: #fff;
+}
+
+.imo_content li .tumbnail{
+    width: 156px;
+    height: 114px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.imo_content li .tumbnail img{
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+}
+.imo_content li .cont_tumb{
+    position: relative;
+    line-height: 160%;
+    top: 10%;
+}
+.imo_content li .cont_tumb strong{
+    font-size: 16px;
+    color: #1a1a1a;
+}
+.imo_content li .cont_tumb p{
+    font-size: 14px;
+    max-width: 202px;
+}
+.imo_content li .cont_tumb span.info_game{
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #F14E1A;
+}
+.imo_content li .tumbnail{
+    border: 1px solid rgba(0,0,0,.05);;
+}
+.imo_content .all_event{
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 51px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    border-top: 1px solid #f2f2f2;
+}
+
+/* mobile */
+.mobile .mobile_title{
+    padding: 20px 0px 10px;
+}
+.mobile .mobile_content{
+    position: relative;
+    background: #ffffff;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,.1);
+}
+.mobile_content ul{
+    padding: 9px 10px;
+}
+.mobile_content li{
+    width: 50%;
+    position: relative;
+}
+.mobile_content li a{
+    display: block;
+    max-width: 368px;
+    height: 114px;
+    margin: 10px;
+    background: #fff;
+}
+.mobile_content>ul>li>a{
+    display: block;
+    max-width: 368px;
+    height: 114px;
+    margin: 10px;
+    background: #fff;
+}
+.mobile_content li .tumbnail{
+    width: 114px;
+    height: 114px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.mobile_content li .tumbnail img{
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+}
+.mobile_content li .cont_tumb{
+    position: relative;
+    line-height: 150%;
+    top: 10%;
+    width: 55%;
+}
+.mobile_content li .cont_tumb strong{
+    font-size: 16px;
+    color: #1a1a1a;
+}
+.mobile_content li .cont_tumb p{
+    font-size: 14px;
+    width: 100%;
+    height: 38px;
+    letter-spacing: -1px;
+}
+.mobile_content .info_user{
+    margin-top: 10px;
+    font-size: 14px;
+}
+.mobile_content .ico_user{
+    display: inline-block;
+    background: url(../images/ico_comm_200324.png) no-repeat -280px -60px;
+    width: 14px;
+    height: 17px;
+    margin-right: 5px;
+}
+
+.mobile_content .all_mobile{
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 51px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    border-top: 1px solid #f2f2f2;
+}
+
+/* banner */
+.banner_1 a{
+    width: 100%;
+    height: 90px;
+    position: relative;
+    display: block;
+    margin-top: 25px;
+    border-radius: 10px;
+    background: #6D3F2F;
+    overflow: hidden;
+}
+.banner_img1{
+    display: inline-block;
+    position: absolute;
+    max-height: 100%;
+    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.banner_2 a{
+    width: 100%;
+    height: 90px;
+    position: relative;
+    display: block;
+    margin-top: 25px;
+    border-radius: 10px;
+    background: #400001;
+    overflow: hidden;
+}
+.banner_img2{
+    display: inline-block;
+    position: absolute;
+    max-height: 100%;
+    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.pcgame a{
+    background: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 48px;
+    width: 100%;
+    height: 53px;
+    display: block;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+}
+
+/* footer */
+#footer .inner{
+    padding: 36px 0px 34px;
+    position: relative;
+    text-align: center;
+}
+#footer h2{
+    text-indent: -99999px;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+}
+#footer ul{
+    display: inline-block;
+    position: relative;
+    width: 234px;
+    height: 18px;
+    margin: 0 auto;
+}
+#footer ul li+li{
+    position: relative;
+    margin-left: 20px;
+}
+#footer ul li+li::before{
+    position: absolute;
+    content: '';
+    top: 3px;
+    left: -11px;
+    width: 1px;
+    height: 11px;
+    background: #cfd0cf;
+}
+#footer ul li a{
+    color: #797979;
+    display: block;
+    font-size: 12px;
+}
+#footer p{
+    font-size: 11px;
+    color: #a8a8a8;
+    height: 18px;
+    text-align: center;
+}
+#footer .kakaogame_corp img{
+    display: inline-block;
+    margin: 0 auto;
+    height: 19px;
+    margin-top: 18px;
+}
+
+#footer .top{
+    font-size: 12px;
+    color: #919191;
+    width: 56px;
+    height: 26px;
+    line-height: 26px;
+    position: absolute;
+    background: transparent;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 3px;
+    right: 0;
+    top: 30px;
+}
+#footer .top .ico_top{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: url(../images/ico_comm_200324.png) no-repeat -480px 0px;
+}
